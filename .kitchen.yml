@@ -14,9 +14,9 @@ verifier:
 platforms:
   - name: ubuntu-14.04
 
-
 suites:
   - name: default
+    data_bags_path: test/fixtures/default/data_bags
     run_list:
       - recipe[web_server::default]
     verifier:
